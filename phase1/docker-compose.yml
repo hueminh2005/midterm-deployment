@@ -19,8 +19,6 @@ services:
     image: mongo:6.0
     container_name: midterm-mongodb
     restart: always
-    environment:
-      - MONGO_INITDB_DATABASE=products_db
     volumes:
       - mongo_data:/data/db
     networks:
